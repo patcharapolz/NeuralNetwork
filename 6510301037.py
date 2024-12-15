@@ -16,7 +16,7 @@ A_train, A_test, B_train, B_test = train_test_split(A, B, test_size=0.5, random_
 
 # Creating a neural network model
 model = Sequential()
-model.add(Dense(16, input_dim=2, activation="relu"))
+# model.add(Dense(16, input_dim=2, activation="relu"))
 model.add(Dense(1, activation="sigmoid"))
 optimizer = Adam(0.01)
 model.compile(loss="binary_crossentropy", optimizer="adam", metrics = ["accuracy"])
