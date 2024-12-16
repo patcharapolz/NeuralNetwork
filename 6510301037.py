@@ -22,7 +22,7 @@ optimizer = Adam(0.01)
 model.compile(loss="binary_crossentropy", optimizer="adam", metrics = ["accuracy"])
 
 # Training the model
-model.fit(A_train, B_train, epochs=300, batch_size=200, verbose=0)
+model.fit(A_train, B_train, epochs=300, batch_size=10, verbose=1)
 
 # Makingg predictions
 B_pred_prob = model.predict(A_test)
